@@ -1,5 +1,15 @@
 # ESPHome-Device-Sim
 
+## Alternative option
+
+This project is useful for simulating ESPHome without repeatedly flashing physical hardware, e.g. for iterating on display drawing lambdas until it's pixel-perfect. If that's all you're doing, you can use esphome directly without Wokwi:
+
+* [Host Platform](https://esphome.io/components/host/) lets you run ESPHome on your Windows/Linux/Mac computer
+* [SDL Display](https://esphome.io/components/display/sdl) gives that ESPHome instance a display (with [optional touchscreen](https://esphome.io/components/touchscreen/sdl))
+* [SDL Binary Sensor](https://esphome.io/components/binary_sensor/sdl/) lets you use keyboard keys to simulate pins (e.g. for buttons)
+
+If you need to simulate more complex electronics, keep reading.
+
 ## Installation
 
 To use this ESPHome device simulator you will need the install the following:
